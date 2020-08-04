@@ -1,0 +1,13 @@
+.logo-footer {
+  display: inline-block;
+  margin-bottom: 8px;
+  @include fontlogoheader($fontReleway, $size: 22px);
+}
+
+.web-footer {
+  color: #2196f3;
+}
+
+.studio-footer {
+  color: #ffffff;
+}

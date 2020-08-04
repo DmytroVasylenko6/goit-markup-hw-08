@@ -1,0 +1,15 @@
+@mixin centeredFlex($type: flex, $items: center, $content: center) {
+  display: $type;
+  align-items: $items;
+  justify-content: $content;
+}
+
+@mixin fontlogoheader($family, $size) {
+  font-family: $family;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: bold;
+  font-size: $size;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+}

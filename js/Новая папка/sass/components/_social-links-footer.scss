@@ -1,0 +1,40 @@
+.invitation-container {
+  margin-left: 69px;
+}
+
+.invitation {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.socialinks-box {
+  @extend %list;
+  display: flex;
+  margin-top: 20px;
+}
+
+.socialinks-box .items + .items {
+  margin-left: 10px;
+}
+
+.socialinks-box .items a {
+  @include centeredFlex();
+  padding: 12px;
+  border-radius: 50px;
+  background-color: rgba(255, 255, 255, 0.1);
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: $acent-color;
+  }
+}
+
+.socialicon {
+  fill: #ffffff;
+}

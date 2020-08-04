@@ -1,0 +1,73 @@
+.contacts-header {
+  @extend %list;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media screen and (min-width: 1200px) {
+    @include centeredFlex();
+    flex-direction: row;
+  }
+
+  a {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.15;
+    letter-spacing: 0.02em;
+    font-style: normal;
+    text-decoration: none;
+    color: #757575;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      color: $acent-color;
+    }
+    @media screen and (max-width: 767px) {
+      font-size: 18px;
+      line-height: 1.16;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      font-size: 12px;
+      line-height: 1.14;
+    }
+
+    @media screen and (min-width: 1200px) {
+      font-size: 14px;
+      line-height: 1.15;
+    }
+  }
+  & .item:not(:last-child) {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      margin-bottom: 10px;
+    }
+
+    @media screen and (max-width: 767px) {
+      margin-bottom: 16px;
+    }
+  }
+  & .item + .item {
+    @media screen and (min-width: 1200px) {
+      margin-left: 30px;
+    }
+  }
+}
+
+.tel-icon {
+  width: 10px;
+  height: 14.94px;
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.mail-icon {
+  width: 16px;
+  height: 11.2px;
+  margin-right: 10px;
+  fill: currentColor;
+}

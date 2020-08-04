@@ -1,0 +1,11 @@
+.footer {
+  background-color: #2f303a;
+}
+
+.footer-flex {
+  @extend %container;
+  display: flex;
+  align-items: baseline;
+  padding-top: 45px;
+  padding-bottom: 28px;
+}

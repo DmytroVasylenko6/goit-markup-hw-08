@@ -1,0 +1,10 @@
+.logo-header {
+  @include fontlogoheader($fontReleway, 26px);
+  .web {
+    color: #2196f3;
+  }
+
+  .studio {
+    color: #000000;
+  }
+}
