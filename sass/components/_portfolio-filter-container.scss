@@ -1,12 +1,44 @@
 .filter-container {
-  padding-top: 93px;
+  @media screen and (max-width: 1199px) {
+    padding-top: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 93px;
+  }
 }
 
 .filter-flex {
   @extend %list;
-  // @include centeredFlex();
-}
 
-.filter-flex .item + .item {
-  //margin-left: 8px;
+  @media screen and (max-width: 767px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media screen and (min-width: 768px) {
+    @include centeredFlex();
+  }
+
+  & .item:not(:last-child) {
+    @media screen and (max-width: 767px) {
+      margin-right: 8px;
+    }
+
+    @media screen and (max-width: 279px) {
+      margin-bottom: 15px;
+    }
+  }
+
+  & .item + .item {
+    @media screen and (min-width: 768px) {
+      margin-left: 8px;
+    }
+  }
+
+  & .item:nth-child(-n + 3) {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 15px;
+    }
+  }
 }

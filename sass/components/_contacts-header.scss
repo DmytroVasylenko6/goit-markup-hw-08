@@ -1,9 +1,17 @@
 .contacts-header {
   @extend %list;
-  //@include centeredFlex();
-  a {
-    //@include centeredFlex();
 
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media screen and (min-width: 1200px) {
+    @include centeredFlex();
+    flex-direction: row;
+  }
+
+  a {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.15;
@@ -19,11 +27,35 @@
     &:focus {
       color: $acent-color;
     }
-  }
-}
+    @media screen and (max-width: 767px) {
+      font-size: 18px;
+      line-height: 1.16;
+    }
 
-.contacts-header .item + .item {
-  //margin-left: 30px;
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      font-size: 12px;
+      line-height: 1.14;
+    }
+
+    @media screen and (min-width: 1200px) {
+      font-size: 14px;
+      line-height: 1.15;
+    }
+  }
+  & .item:not(:last-child) {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      margin-bottom: 10px;
+    }
+
+    @media screen and (max-width: 767px) {
+      margin-bottom: 16px;
+    }
+  }
+  & .item + .item {
+    @media screen and (min-width: 1200px) {
+      margin-left: 30px;
+    }
+  }
 }
 
 .tel-icon {

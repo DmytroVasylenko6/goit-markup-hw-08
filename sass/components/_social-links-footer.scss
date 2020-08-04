@@ -1,5 +1,15 @@
 .invitation-container {
-  //margin-left: 69px;
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 69px;
+  }
 }
 
 .invitation {
@@ -13,16 +23,16 @@
 
 .socialinks-box {
   @extend %list;
-  //display: flex;
-  //margin-top: 20px;
+  display: flex;
+  margin-top: 20px;
 }
 
 .socialinks-box .items + .items {
-  //margin-left: 10px;
+  margin-left: 10px;
 }
 
 .socialinks-box .items a {
-  //@include centeredFlex();
+  @include centeredFlex();
   padding: 12px;
   border-radius: 50px;
   background-color: rgba(255, 255, 255, 0.1);

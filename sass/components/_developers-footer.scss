@@ -5,7 +5,11 @@
   font-weight: normal;
   font-size: 12px;
   line-height: 2;
-  //text-align: center;
+  text-align: center;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.4);
+
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
 }
