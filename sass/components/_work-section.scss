@@ -1,7 +1,11 @@
 .work-section {
   padding-bottom: 94px;
-  display: none;
+
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
 }
+
 .work-title {
   margin: 0;
   font-weight: bold;
