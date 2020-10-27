@@ -30,6 +30,14 @@
       0px 1px 3px rgba(0, 0, 0, 0.12);
     border-radius: 0px 0px 4px 4px;
     overflow: hidden;
+    transition-property: transform;
+    transition-duration: 250ms;
+    transition-timing-function: linear;
+    transition-delay: 0;
+
+    &:hover {
+      transform: scale(1.05);
+    }
 
     @media screen and (min-width: 768px) {
       width: calc((100% - 2 * 30px) / 2);

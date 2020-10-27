@@ -1,0 +1,33 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel src/*.html ",
+    "build": "parcel build src/*.html --public-url /goit-markup-hw-08/",
+    "deploy": "gh-pages -d dist",
+    "predeploy": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DmytroVasylenko6/goit-markup-hw-08.git"
+  },
+  "keywords": [],
+  "author": "Dmytro Vasylenko <tredstoun651@ukr.net>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DmytroVasylenko6/goit-markup-hw-08/issues"
+  },
+  "homepage": "https://DmytroVasylenko6.github.io/goit-markup-hw-08",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4",
+    "posthtml-modules": "^0.6.2",
+    "sass": "^1.27.0"
+  },
+  "dependencies": {
+    "gh-pages": "^3.1.0",
+    "parcel-plugin-nuke-dist": "^1.0.1",
+    "posthtml-img-autosize": "^0.1.6"
+  }
+}
