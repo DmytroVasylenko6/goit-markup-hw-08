@@ -10,4 +10,4 @@ var t;!function(e){"use strict";var i=null,s=null;!function(){var t,i,s,n,a,o,r=
 },{}],"pzHV":[function(require,module,exports) {
 "use strict";require("./sass/main.scss");var e=s(require("./js/menu")),u=s(require("./js/svgxuse")),r=s(require("mixitup"));function s(e){return e&&e.__esModule?e:{default:e}}(0,e.default)(),(0,u.default)();var t=document.querySelector(".portfolio-box");(0,r.default)(t);
 },{"./sass/main.scss":"clu1","./js/menu":"i0CD","./js/svgxuse":"vWBo","mixitup":"CMXd"}]},{},["pzHV"], null)
-//# sourceMappingURL=/goit-markup-hw-08/portfolio.0fffb8b9.js.map
+//# sourceMappingURL=/goit-markup-hw-08/portfolio.1b5a4b5b.js.map
